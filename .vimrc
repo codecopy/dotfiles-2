@@ -21,9 +21,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 set laststatus=2
-set nobackup
 set shiftwidth=4
 set tabstop=4
+set nobackup
+set nowritebackup
 set softtabstop=4
 
 map <F3> :NERDTreeMirror<CR>
@@ -46,12 +47,15 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'valloric/youcompleteme'
-
+Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'wavded/vim-stylus'
+Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'c.vim'
+Plugin 'ctags.vim'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/syntastic'

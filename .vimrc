@@ -59,6 +59,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/syntastic'
+Plugin 'michalliu/sourcebeautify.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

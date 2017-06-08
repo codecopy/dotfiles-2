@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
 set nocp
+let mapleader=";"
 filetype plugin indent on
 set number
 set incsearch
@@ -19,6 +20,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:cpp_class_scope_highlight = 1
 
 set laststatus=2
 set shiftwidth=4
@@ -59,7 +62,13 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/syntastic'
+
+Plugin 'michalliu/jsoncodecs.vim'
+Plugin 'michalliu/jsruntime.vim'
 Plugin 'michalliu/sourcebeautify.vim'
+
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -32,6 +32,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
 
+# lock the screen
+bindsym $mod+l exec i3lock
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -41,14 +44,16 @@ bindsym $mod+d exec dmenu_run
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# control the audio
 bindsym $mod+comma exec amixer set Master -q 5%-
 bindsym $mod+period exec amixer set Master -q 5%+
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -156,3 +161,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec --no-startup-id feh --bg-fill ~/Pictures/Network-Map-2017-LeaseWeb-Master.jpg
+exec --no-startup-id ibus-daemon

@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
+colorscheme space-vim-dark
 set nocp
 let mapleader=";"
 filetype plugin indent on
@@ -41,6 +42,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+"
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)"
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -61,7 +67,6 @@ Plugin 'ctags.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'scrooloose/syntastic'
 
 Plugin 'michalliu/jsoncodecs.vim'
 Plugin 'michalliu/jsruntime.vim'
@@ -69,6 +74,9 @@ Plugin 'michalliu/sourcebeautify.vim'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+Plugin 'lervag/vimtex'
+
+Plugin 'rafi/awesome-vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

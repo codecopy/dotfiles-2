@@ -33,7 +33,11 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal
 
 # lock the screen
-bindsym $mod+l exec i3lock
+#bindsym $mod+l exec i3lock -i ~/Pictures/usrl.png
+bindsym $mod+l exec i3lock -i ~/Pictures/kali-desktop.png
+
+# printscreen
+bindsym $mod+p exec gnome-screenshot
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -48,6 +52,10 @@ bindsym $mod+d exec dmenu_run
 # control the audio
 bindsym $mod+comma exec amixer set Master -q 5%-
 bindsym $mod+period exec amixer set Master -q 5%+
+
+# control the brightness - need brightlight
+bindsym $mod+n exec --no-startup-id brightlight -d 20
+bindsym $mod+m exec --no-startup-id brightlight -i 20
 
 # change focus
 #bindsym $mod+j focus left
@@ -160,7 +168,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+		status_command exec ~/.config/i3/net-speed.sh
 }
 
-exec --no-startup-id feh --bg-fill ~/Pictures/Network-Map-2017-LeaseWeb-Master.jpg
 exec --no-startup-id ibus-daemon
+#exec --no-startup-id feh --bg-max /home/Nova/Pictures/ccc.jpg

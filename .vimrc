@@ -3,6 +3,9 @@ filetype off                  " required
 syntax on
 colorscheme space-vim-dark
 set nocp
+set nobackup
+set nowritebackup
+set number relativenumber
 let mapleader=";"
 filetype plugin indent on
 set number
@@ -77,6 +80,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'lervag/vimtex'
 
 Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'hotoo/pangu.vim'
+
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

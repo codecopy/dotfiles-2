@@ -5,7 +5,7 @@ colorscheme space-vim-dark
 set nocp
 set nobackup
 set nowritebackup
-set number relativenumber
+"set number relativenumber
 let mapleader=";"
 filetype plugin indent on
 set number
@@ -30,9 +30,12 @@ let g:cpp_class_scope_highlight = 1
 set laststatus=2
 set shiftwidth=4
 set tabstop=4
-set nobackup
-set nowritebackup
+set backupdir=/dev/shm//
+set directory=/dev/shm//
+set undodir=/dev/shm//
 set softtabstop=4
+set mouse=
+set ttymouse=
 
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
@@ -82,7 +85,12 @@ Plugin 'lervag/vimtex'
 Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'hotoo/pangu.vim'
 
+Plugin 'tpope/vim-commentary'
+
 Plugin 'davidhalter/jedi-vim'
+Plugin 'a.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'francoiscabrol/ranger.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

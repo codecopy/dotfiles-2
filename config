@@ -36,7 +36,7 @@ bindsym $mod+Return exec gnome-terminal
 bindsym $mod+l exec i3lock -i ~/Pictures/wikileaks.png
 
 # printscreen
-bindsym $mod+p exec --no-startup-id gnome-screenshot -a
+bindsym --release $mod+p exec gnome-screenshot -a
 
 # kill focused window
 bindsym $mod+Shift+q kill

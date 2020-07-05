@@ -27,6 +27,10 @@ let g:syntastic_check_on_wq = 0
 
 let g:cpp_class_scope_highlight = 1
 
+let g:airline_theme='badwolf'
+
+let g:go_fmt_autosave = 0
+
 set laststatus=2
 set shiftwidth=4
 set tabstop=4
@@ -91,6 +95,8 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'a.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'francoiscabrol/ranger.vim'
+
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
